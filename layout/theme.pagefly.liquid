@@ -51,7 +51,9 @@ PLEASE REMOVE ONLY AFTER YOU UNINSTALLED THE PAGEFLY APP.
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
 
 
-</head>
+ 
+{% include 'pagefly-header' %}
+ </head> 
 
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ request.page_type | handle }}"><div class="pagefly-container">{{ content_for_layout }}</div></body>
 </html>
